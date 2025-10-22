@@ -14,14 +14,14 @@ FUN_FACTS = [
     "I’m learning how to code and utilize it to make programs that I find useful",
     "I want to build my own game at some point in the future",
 ]
-#PHOTO_PATH = "your_photo.jpg"  # Put a file in repo root or set a URL
+PHOTO_PATH = "climb.jpg"  # Put a file in repo root or set a URL
 
 # ---------- Layout ----------
 col1, col2 = st.columns([1, 2], vertical_alignment="center")
 
 with col1:
     try:
-        st.image("climb.jpg", caption=NAME, use_container_width=True)
+        st.image(PHOTO_PATH, caption=NAME, use_container_width=True)
     except Exception:
         st.info("Add a photo named `your_photo.jpg` to the repo root, or change PHOTO_PATH.")
 with col2:

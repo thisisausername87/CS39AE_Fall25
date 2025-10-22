@@ -14,6 +14,13 @@ FUN_FACTS = [
     "I’m learning how to code and utilize it to make programs that I find useful",
     "I want to build my own game at some point in the future",
 ]
+
+import os
+
+st.write("Current working directory:", os.getcwd())
+st.write("Absolute photo path:", os.path.abspath(PHOTO_PATH))
+st.write("Does file exist?:", os.path.exists(PHOTO_PATH))
+
 PHOTO_PATH = "../../streamlit_CS/assets/your_photo.jpg"  # Put a file in repo root or set a URL
 
 # ---------- Layout ----------

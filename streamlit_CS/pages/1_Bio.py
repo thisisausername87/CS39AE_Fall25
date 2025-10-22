@@ -14,7 +14,7 @@ FUN_FACTS = [
     "I’m learning how to code and utilize it to make programs that I find useful",
     "I want to build my own game at some point in the future",
 ]
-PHOTO_PATH = "your_photo.jpg"  # Put a file in repo root or set a URL
+PHOTO_PATH = "assets/climb.jpg"  # Put a file in repo root or set a URL
 
 # ---------- Layout ----------
 col1, col2 = st.columns([1, 2], vertical_alignment="center")

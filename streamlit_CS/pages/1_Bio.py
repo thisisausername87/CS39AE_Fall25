@@ -15,13 +15,9 @@ FUN_FACTS = [
     "I want to build my own game at some point in the future",
 ]
 
-PHOTO_PATH = "../../streamlit_CS/assets/your_photo.jpg"  # Put a file in repo root or set a URL
-
 import os
 
-st.write("Current working directory:", os.getcwd())
-st.write("Absolute photo path:", os.path.abspath(PHOTO_PATH))
-st.write("Does file exist?:", os.path.exists(PHOTO_PATH))
+PHOTO_PATH = os.path.join(os.getcwd(), "streamlit_CS", "assets", "your_photo.jpg")
 
 # ---------- Layout ----------
 col1, col2 = st.columns([1, 2], vertical_alignment="center")

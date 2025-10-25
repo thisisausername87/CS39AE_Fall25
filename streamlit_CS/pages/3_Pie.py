@@ -15,7 +15,7 @@ st.set_page_config(page_title="Pie Chart Visualization", page_icon="🥧")
 st.title("🥧 Pie Chart Visualization")
 
 # Path to the CSV file
-data_path = os.path.join("CS39AE_Fall25", "streamlit_CS", "data", "pie_demo.csv")
+data_path = os.path.join(base_path, "..", "data", "pie_demo.csv")
 
 # Load data
 try:

@@ -68,7 +68,7 @@ st.caption(f"Last refreshed at: {time.strftime('%H:%M:%S')}")
 
 
 st.subheader("Prices")
-df, err = fetch_prices(API_URL)
+df, err = fetch_prices(wurl)
 
 if err:
     st.warning(f"{err}\nShowing sample data so the demo continues.")

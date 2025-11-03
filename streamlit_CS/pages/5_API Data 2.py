@@ -39,9 +39,9 @@ def get_weather():
         r.raise_for_status()
         j = r.json()["hourly"]
         df = pd.DataFrame({
-            "time": pd.to_datetime(j["time"]),
-            "temperature (°C)": j["temperature_2m"],
-            "wind speed (m/s)": j["wind_speed_10m"]
+            "Time": pd.to_datetime(j["time"]),
+            "Temperature (°C)": j["temperature_2m"],
+            "Wind Speed (m/s)": j["wind_speed_10m"]
         })
         return df, None
     except requests.RequestException as e:

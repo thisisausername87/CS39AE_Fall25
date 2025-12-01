@@ -7,6 +7,9 @@ data_path = os.path.join(os.getcwd(), "streamlit_CS", "data", "degrees_that_pay_
 df = pd.read_csv(data_path)
 df_sorted = df.sort_values(by="Starting Median Salary")
 
+st.title("Different Types of Charts")
+st.subtitle("This page shows various examples of different charts relating to the data and how to read them, along with some insights that can be gained from looking at the data.")
+
 fig = px.bar(df_sorted, x="Undergraduate Major", y="Starting Median Salary", title="Starting Salary by Major")
 st.plotly_chart(fig)
 st.write("This bar graph shows the starting median salaries for each undergraduate major. The graph is understood by looking at the value on the left of the graph and correlating it with the major on the bottom under the bar.") 

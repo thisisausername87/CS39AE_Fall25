@@ -17,7 +17,7 @@ fig.update_layout(
     yaxis_title="Count"
 )
 fig.show()
-st.write("This histogram shows the number of jobs that are in each slary range. 
+st.write("This histogram shows the number of jobs that are in each slary range.")
 
 fig = px.scatter(df_sorted, x="Starting Median Salary", y="Percent change from Starting to Mid-Career Salary", title="Percent Salary Increase Based on Starting Salary")
 fig.update_layout(

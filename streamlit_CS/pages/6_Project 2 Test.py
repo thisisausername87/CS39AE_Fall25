@@ -8,7 +8,7 @@ df = pd.read_csv(data_path)
 df_sorted = df.sort_values(by="Starting Median Salary")
 
 st.title("Different Types of Charts")
-st.subtitle("This page shows various examples of different charts relating to the data and how to read them, along with some insights that can be gained from looking at the data.")
+st.subheader("This page shows various examples of different charts relating to the data and how to read them, along with some insights that can be gained from looking at the data.")
 
 fig = px.bar(df_sorted, x="Undergraduate Major", y="Starting Median Salary", title="Starting Salary by Major")
 st.plotly_chart(fig)

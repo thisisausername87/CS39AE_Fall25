@@ -17,7 +17,7 @@ fig.update_layout(
     xaxis_title="Starting Median Salary",
     yaxis_title="Count"
 )
-fig.show()
+st.plotly_chart(fig)
 st.write("This histogram shows the number of jobs that are in each slary range.")
 
 fig = px.scatter(df_sorted, x="Starting Median Salary", y="Percent change from Starting to Mid-Career Salary", title="Percent Salary Increase Based on Starting Salary")
@@ -25,7 +25,7 @@ fig.update_layout(
     xaxis_title="Starting Median Salary",
     yaxis_title="Salary Percent Increase"
 )
-fig.show()
+st.plotly_chart(fig)
 
 fig = px.line(df_sorted, x="Starting Median Salary", y="Mid-Career 90th Percentile Salary", title="Upper Salary Limit Based On Starting Salary")
-fig.show()
+st.plotly_chart(fig)

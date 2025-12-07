@@ -15,14 +15,14 @@ print("Degree Centrality:")
 for node, score in degree_centrality.items():
     st.write(f"{node}: {score}")
 
-st.write("\n\n")
+st.write("\n")
 
 betweenness_centrality = nx.betweenness_centrality(G, weight='weight')
 print("Betweenness Centrality:")
 for node, score in betweenness_centrality.items():
     st.write(f"{node}: {score}")
 
-st.write("\n\n")
+st.write("\n")
 
 closeness_centrality = nx.closeness_centrality(G)
 print("Closeness Centrality:")

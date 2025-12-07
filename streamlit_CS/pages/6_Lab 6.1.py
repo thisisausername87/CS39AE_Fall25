@@ -33,3 +33,11 @@ print("Closeness Centrality:")
 st.write("Closeness Centrality")
 for node, score in closeness_centrality.items():
     st.write(f"{node}: {score}")
+
+st.write("\n\n")
+
+communities = greedy_modularity_communities(G)
+for i, community in enumerate(communities, 1):
+    st.write(f"Community {i}: {list(community)}")
+
+st.write("\n\nIn this graph, there are three primary community groups, with group 1 being made up of Bob, Charlie, Alice, and Frank, group 2 being made up of Ian, Diana, and Eve, and group 3 being made up of Hannah, Grace, and Jack. Bob, Charlie, Diana, and Eve have the highest degree centralities, Bob has the highest betweenness centrality, and Bob also has the highest closeness centrality. Bob is the most influential person in this graph and is depicted in red.")

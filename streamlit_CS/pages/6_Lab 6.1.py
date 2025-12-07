@@ -13,18 +13,18 @@ st.pyplot(fig)
 degree_centrality = nx.degree_centrality(G)
 print("Degree Centrality:")
 for node, score in degree_centrality.items():
-    print(f"{node}: {score}")
+    st.write(f"{node}: {score}")
 
-print("\n")
+st.write("\n")
 
 betweenness_centrality = nx.betweenness_centrality(G, weight='weight')
 print("Betweenness Centrality:")
 for node, score in betweenness_centrality.items():
-    print(f"{node}: {score}")
+    st.write(f"{node}: {score}")
 
-print("\n")
+st.write("\n")
 
 closeness_centrality = nx.closeness_centrality(G)
 print("Closeness Centrality:")
 for node, score in closeness_centrality.items():
-    print(f"{node}: {score}")
+    st.write(f"{node}: {score}")

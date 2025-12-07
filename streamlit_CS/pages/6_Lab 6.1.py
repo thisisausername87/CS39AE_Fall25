@@ -9,7 +9,7 @@ fig, ax = plt.subplots()
 pos = nx.spring_layout(G)
 special_nodes = {"Bob"}
 node_colors = ['red' if n in special_nodes else 'lightblue' for n in G.nodes()]
-nx.draw_circular(G, with_labels=True, node_color="node_colors", font_weight='bold')
+nx.draw_circular(G, with_labels=True, node_color=node_colors, font_weight='bold')
 st.pyplot(fig)
 
 degree_centrality = nx.degree_centrality(G)

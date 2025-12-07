@@ -7,7 +7,7 @@ G = nx.Graph()
 G.add_edges_from([("Alice", "Bob"), ("Alice", "Charlie"), ("Bob", "Charlie"), ("Charlie", "Diana"), ("Diana", "Eve"), ("Bob", "Diana"), ("Frank", "Eve"), ("Eve", "Ian"), ("Diana", "Ian"), ("Ian", "Grace"), ("Grace", "Hannah"), ("Hannah", "Jack"), ("Grace", "Jack"), ("Charlie", "Frank"), ("Alice", "Eve"), ("Bob", "Jack")])
 fig, ax = plt.subplots()
 pos = nx.spring_layout(G)
-special_nodes = {2}
+special_nodes = {"Bob"}
 node_colors = ['red' if n in special_nodes else 'lightblue' for n in G.nodes()]
 nx.draw_circular(G, with_labels=True, node_color="node_colors", font_weight='bold')
 st.pyplot(fig)

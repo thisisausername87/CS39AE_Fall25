@@ -4,9 +4,10 @@ from networkx.algorithms.community import greedy_modularity_communities
 
 G = nx.Graph()
 G.add_edges_from([("Alice", "Bob"), ("Alice", "Charlie"), ("Bob", "Charlie"), ("Charlie", "Diana"), ("Diana", "Eve"), ("Bob", "Diana"), ("Frank", "Eve"), ("Eve", "Ian"), ("Diana", "Ian"), ("Ian", "Grace"), ("Grace", "Hannah"), ("Hannah", "Jack"), ("Grace", "Jack"), ("Charlie", "Frank"), ("Alice", "Eve"), ("Bob", "Jack")])
+fig, ax = plt.subplots()
 pos = nx.spring_layout(G)
 nx.draw_circular(G, with_labels=True, node_color='lightblue', font_weight='bold')
-plt.show()
+st.pyplot(fig)
 
 degree_centrality = nx.degree_centrality(G)
 print("Degree Centrality:")

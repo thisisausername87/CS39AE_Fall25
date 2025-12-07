@@ -1,3 +1,4 @@
+import streamlit as st
 import networkx as nx
 import matplotlib.pyplot as plt
 from networkx.algorithms.community import greedy_modularity_communities
